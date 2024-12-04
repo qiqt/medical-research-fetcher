@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "medical-research-fetcher"
+version = "0.1.0"
+authors = [
+  { name="Ilja Krestjancevs", email="founder@amberbyte.io" },
+]
+description = "A Python tool for fetching medical research papers from PubMed and other sources"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+requires-python = ">=3.8"
+dependencies = [
+    "python-dotenv",
+    "aiofiles",
+    "pymed",
+    "biopython",
+    "aiohttp",
+    "asyncio"
+]
+
+keywords = ["pubmed", "research", "medical", "papers", "science"]
+
+[project.urls]
+Homepage = "https://github.com/qiqt/medical-research-fetcher"
+Repository = "https://github.com/qiqt/medical-research-fetcher.git"
+"Bug Tracker" = "https://github.com/qiqt/medical-research-fetcher/issues"
